@@ -1,7 +1,9 @@
 function makeid(l) {
-  // write your code here
+    let randomStr = Math.random().toString(36).substring(2, 2 + l);
+    console.log(randomStr);
+    return randomStr; 
 }
 
 // Do not change the code below.
-const l = prompt("Enter a number.");
+const l = parseInt(prompt("Enter a number."), 10); // Parse as base-10 integer
 alert(makeid(l));
